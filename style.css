@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;300;500;600&family=Rubik+Glitch&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alexandria', sans-serif;
+    transition: 0.5s;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #F3F5F9;
+}
+main {
+    background-color: #fff;
+    width: 450px;
+    padding: 60PX;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    text-align: center;
+   
+}
+p {
+    margin: 20px 0;
+}
+div{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+input  {
+    width: calc(100% - 100PX);
+    padding: 16px 5px;
+    outline: 0;
+    border: 2px solid gray;
+    border-radius: 60PX 0 0 60PX;
+    text-align: center;
+
+} 
+
+h4 {
+    margin: 20px 0;
+    margin-bottom: 40px;
+    line-height: 60PX;
+    color: #999;
+}
+button {
+    width: 100PX;
+    border: 1px solid gray;
+    background-color: gray ;
+    color: #fff;
+    border-radius: 0 60PX 60PX 0;
+    cursor: pointer;
+}
+#link {
+    display: none;
+    text-align: center;
+    justify-content: center;
+}
+a {
+    text-align: center;
+    border: 2px solid #0B6FDC;
+    padding: 16px 70px;
+    text-decoration: 0;
+    color: #fff;
+    transition:0.5s;
+    border-radius: 60PX;
+    cursor: pointer;
+    background-color: #0B6FDC;
+}
+a:hover {
+   
+    background-color: transparent;
+    color: #0B6FDC;
+}

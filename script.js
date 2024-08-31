@@ -3,6 +3,11 @@ let form = document.getElementById('form');
 let message = document.getElementById('message');
 let link = document.getElementById('link');
 
+button.addEventListener('keydown', function(event)) {
+    if (event.key === 'Enter') {
+        console.log('Touche Entrée pressée')}}
+
+
 const secretNumber = Math.floor(Math.random() * 100);
 let attempts = 10 ;
 
@@ -11,12 +16,12 @@ button.onclick = function() {
     if (input.value != ""){
 
         if(input.value < secretNumber){
-            message.innerText = "Le nombre est supérieur à " + input.value;
+            message.innerText = "Le nombre est supérieur à " + input.value + ". Il vous reste " + (attempts) + " essais.";
             message.style.color = "gray";
 
         }
         else if (input.value > secretNumber){
-            message.innerText = "Le nombre est inférieur à " + input.value;
+            message.innerText = "Le nombre est inférieur à " + input.value + ". Il vous reste " + (attempts) + " essais.";
             message.style.color = "gray";
         }
 
